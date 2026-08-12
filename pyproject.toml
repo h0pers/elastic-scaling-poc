@@ -1,0 +1,23 @@
+[project]
+name = "elastic-scaling-poc"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+analysis = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.1",
+    "pandas>=3.0.5",
+]
+cluster = [
+    "kubeflow>=0.5.0",
+]
+training = [
+    "datasets>=5.0.1",
+    "nvidia-ml-py>=13.610.43",
+    "peft>=0.20.0",
+    "torch>=2.13.0",
+    "transformers>=5.15.0",
+    "trl>=1.9.2",
+]

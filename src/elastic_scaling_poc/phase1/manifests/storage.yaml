@@ -1,0 +1,17 @@
+# Shared RWX volume for Phase 1 training runs.
+# Mounted by all training pods and the Jupyter workbench simultaneously.
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: phase1-shared
+  namespace: dhryshch-elastic-scaling
+  labels:
+    app.kubernetes.io/part-of: elastic-scaling-poc
+    elastic-scaling-poc/phase: "1"
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs-csi
+  resources:
+    requests:
+      storage: 100Gi
