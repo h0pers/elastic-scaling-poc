@@ -41,6 +41,10 @@ def train_func(**parameters):
     hf_cache = f"{p.output_dir}/hf-cache"
     os.environ.setdefault("HF_HOME", hf_cache)
 
+    hf_token_path = Path("/mnt/hf-token/HF_TOKEN")
+    if hf_token_path.exists() and "HF_TOKEN" not in os.environ:
+        os.environ["HF_TOKEN"] = hf_token_path.read_text().strip()
+
     def world_size():
         if dist.is_available() and dist.is_initialized():
             return dist.get_world_size()
