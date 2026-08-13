@@ -3,11 +3,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: phase1-shared
+  name: elastic-scaling-shared
   namespace: dhryshch-elastic-scaling
   labels:
     app.kubernetes.io/part-of: elastic-scaling-poc
-    elastic-scaling-poc/phase: "1"
+    opendatahub.io/dashboard: "true"
 spec:
   accessModes:
     - ReadWriteMany

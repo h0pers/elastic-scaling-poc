@@ -25,7 +25,7 @@ def train_func(**parameters):
     p = SimpleNamespace(**{
         "model_id": "meta-llama/Llama-3.1-8B",
         "dataset_id": "tatsu-lab/alpaca",
-        "output_dir": "/mnt/output",
+        "output_dir": "/mnt/kubeflow-checkpoints",
         "max_steps": 200,
         "save_steps": 100,
         "seq_length": 1024,
