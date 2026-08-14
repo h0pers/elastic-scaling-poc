@@ -1,0 +1,30 @@
+apiVersion: jobset.x-k8s.io/v1alpha2
+kind: JobSet
+metadata:
+  name: phase2-resize-jobset
+  namespace: elastic-scaling
+spec:
+  replicatedJobs:
+    - name: workers
+      replicas: 1
+      template:
+        spec:
+          completionMode: Indexed
+          completions: 1
+          parallelism: 1
+          template:
+            spec:
+              containers:
+                - name: worker
+                  image: python:3.12-alpine
+                  command: ["python", "-c"]
+                  args:
+                    - |
+                      import time
+                      print("JobSet worker running", flush=True)
+                      for i in range(600):
+                          time.sleep(1)
+                          if i % 60 == 0:
+                              print(f"minute {i//60}/10", flush=True)
+                  resources: {}
+              restartPolicy: OnFailure
