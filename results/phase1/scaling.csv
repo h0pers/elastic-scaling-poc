@@ -1,0 +1,5 @@
+type,run_name,world_size,model_id,dataset_id,max_steps,seq_length,per_device_batch_size,grad_accum_steps,global_batch_size,tokens_per_step,warmup_steps_excluded,steady_state_steps,total_train_time_s,mean_step_time_s,median_step_time_s,mean_tokens_per_s,gpu_util_samples,gpu_util_mean_pct,gpu_util_max_pct,gpu_mem_allocated_gb,gpu_mem_reserved_gb,gpu_mem_peak_gb,speedup,efficiency_pct
+summary,phase1-baseline-1gpu,1,meta-llama/Llama-3.1-8B,tatsu-lab/alpaca,200,1024,4,32,128,131072,20,1,58.21,56.2568,56.2568,2329.9,200,56.18,100,16.241,31.9,23.763,1.0,100.0
+summary,phase1-baseline-2gpu,2,meta-llama/Llama-3.1-8B,tatsu-lab/alpaca,200,1024,4,16,128,131072,20,1,30.75,28.1873,28.1873,4650.0,160,36.94,100,16.296,38.636,23.815,1.9957938108931712,99.8
+summary,phase1-baseline-4gpu,4,meta-llama/Llama-3.1-8B,tatsu-lab/alpaca,200,1024,4,8,128,131072,20,1,20.59,14.409,14.409,9096.5,129,26.05,100,16.296,26.103,23.815,3.904244817374136,97.6
+summary,phase1-baseline-8gpu,8,meta-llama/Llama-3.1-8B,tatsu-lab/alpaca,200,1024,4,4,128,131072,20,1,19.22,8.7922,8.7922,14907.8,114,30.89,100,16.296,32.33,23.815,6.398472037426498,80.0
