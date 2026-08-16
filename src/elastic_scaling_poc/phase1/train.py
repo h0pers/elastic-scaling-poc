@@ -96,6 +96,14 @@ def train_func(**parameters):
                 except Exception:
                     break
 
+        def reset(self):
+            """Drop samples collected before training started.
+
+            The sampler runs from process start, so without this the mean is
+            averaged over the model load, when the GPUs are idle.
+            """
+            self._samples.clear()
+
         def stop(self):
             self._stop.set()
             if self._thread is not None:
@@ -137,6 +145,7 @@ def train_func(**parameters):
 
         def on_train_begin(self, args, state, control, **kwargs):
             self.metrics_path.write_text("")
+            self.sampler.reset()
             self.train_start = time.perf_counter()
 
         def on_step_begin(self, args, state, control, **kwargs):
@@ -273,7 +282,7 @@ def train_func(**parameters):
     trainer.add_callback(callback)
 
     start = time.perf_counter()
-    trainer.train()
+    trainer.train(resume_from_checkpoint=False)
     total_s = time.perf_counter() - start
 
     sampler.stop()
