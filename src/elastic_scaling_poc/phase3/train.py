@@ -107,6 +107,15 @@ def train_func(**parameters):
                 except Exception:
                     break
 
+        def reset(self):
+            """Drop samples collected before training started.
+
+            The sampler runs from process start, so without this the mean is
+            averaged over the model load and checkpoint restore, when the GPUs
+            are idle.
+            """
+            self._samples.clear()
+
         def stop(self):
             self._stop.set()
             if self._thread is not None:
@@ -144,7 +153,9 @@ def train_func(**parameters):
                 fh.write(json.dumps(record) + "\n")
 
         def on_train_begin(self, args, state, control, **kwargs):
-            self.metrics_path.write_text("")
+            if not resumed:
+                self.metrics_path.write_text("")
+            self.sampler.reset()
             self.train_start = time.perf_counter()
             if resumed:
                 log("checkpoint_restored")
@@ -303,10 +314,7 @@ def train_func(**parameters):
             print("[phase3] no checkpoint found, training from scratch", flush=True)
 
     start = time.perf_counter()
-    if resumed:
-        trainer.train(resume_from_checkpoint=last_checkpoint)
-    else:
-        trainer.train()
+    trainer.train(resume_from_checkpoint=last_checkpoint or False)
     total_s = time.perf_counter() - start
 
     log("training_complete")
