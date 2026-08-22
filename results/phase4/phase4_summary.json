@@ -1,0 +1,168 @@
+{
+  "experiment": "phase4_kill_vs_shrink",
+  "parameters": {
+    "low_priority_steps": 300,
+    "high_priority_steps": 100,
+    "interrupt_at_step": 100,
+    "save_steps": 100,
+    "fleet_gpus": 8
+  },
+  "version_a": {
+    "total_wall_time_s": 4224.068885803223,
+    "drain_time_s": 5.223328113555908,
+    "gap_time_s": 1600.365958929062,
+    "restart_overhead_s": 77.857,
+    "work_lost_steps": 0,
+    "allocated_gpu_hours": 3.98391061729855,
+    "fleet_utilization_pct": 42.44153744295407,
+    "idle_gpu_hours": 5.402909128930833,
+    "events": {
+      "version": "A",
+      "events": [
+        {
+          "label": "low_priority_submitted",
+          "time": 1787405608.130685,
+          "gpus": 8
+        },
+        {
+          "label": "low_priority_checkpoint_reached",
+          "time": 1787406603.277862,
+          "step": 100
+        },
+        {
+          "label": "high_priority_arrival",
+          "time": 1787406603.2779284
+        },
+        {
+          "label": "low_priority_initial_container_startup",
+          "time": 1787406603.3367653,
+          "container_startup_s": 2.0
+        },
+        {
+          "label": "low_priority_killed",
+          "time": 1787406603.381612
+        },
+        {
+          "label": "low_priority_gpus_released",
+          "time": 1787406608.401907
+        },
+        {
+          "label": "work_lost_measured",
+          "time": 1787406608.4059834,
+          "steps_lost": 0
+        },
+        {
+          "label": "high_priority_submitted",
+          "time": 1787406608.5012565,
+          "gpus": 4
+        },
+        {
+          "label": "high_priority_complete",
+          "time": 1787408203.518958
+        },
+        {
+          "label": "high_priority_container_startup",
+          "time": 1787408203.641984,
+          "container_startup_s": 2.0
+        },
+        {
+          "label": "low_priority_restarted",
+          "time": 1787408203.747571,
+          "gpus": 8
+        },
+        {
+          "label": "low_priority_restart_container_startup",
+          "time": 1787408203.847571,
+          "container_startup_s": 32.0
+        },
+        {
+          "label": "low_priority_complete",
+          "time": 1787409832.199571
+        }
+      ]
+    }
+  },
+  "version_b": {
+    "total_wall_time_s": 4004.258712053299,
+    "drain_time_s": 5.362365007400513,
+    "gap_time_s": 5.173132419586182,
+    "restart_overhead_s": 154.924,
+    "work_lost_steps": 0,
+    "allocated_gpu_hours": 5.5414602441257905,
+    "fleet_utilization_pct": 62.275124790273885,
+    "idle_gpu_hours": 3.3568924493259846,
+    "container_startup_adjustment_s": 0,
+    "events": {
+      "version": "B",
+      "events": [
+        {
+          "label": "low_priority_submitted",
+          "time": 1787412037.979166,
+          "gpus": 8
+        },
+        {
+          "label": "low_priority_checkpoint_reached",
+          "time": 1787412921.13393,
+          "step": 100
+        },
+        {
+          "label": "high_priority_arrival",
+          "time": 1787412921.1339858
+        },
+        {
+          "label": "low_priority_initial_container_startup",
+          "time": 1787412921.2005532,
+          "container_startup_s": 2.0
+        },
+        {
+          "label": "low_priority_shrink_started",
+          "time": 1787412921.2313297
+        },
+        {
+          "label": "low_priority_gpus_released",
+          "time": 1787412926.3103986
+        },
+        {
+          "label": "initial_work_lost_measured",
+          "time": 1787412926.3147023,
+          "steps_lost": 4
+        },
+        {
+          "label": "concurrent_phase_started",
+          "time": 1787412926.3147433
+        },
+        {
+          "label": "low_priority_shrunk_submitted",
+          "time": 1787412926.404462,
+          "gpus": 4
+        },
+        {
+          "label": "high_priority_submitted",
+          "time": 1787412926.4963508,
+          "gpus": 4
+        },
+        {
+          "label": "high_priority_complete",
+          "time": 1787414536.8553526
+        },
+        {
+          "label": "high_priority_container_startup",
+          "time": 1787414536.9200625,
+          "container_startup_s": 2.0
+        },
+        {
+          "label": "low_priority_complete",
+          "time": 1787416042.237878,
+          "note": "completed near max_steps"
+        }
+      ]
+    }
+  },
+  "headline": {
+    "wall_time_saved_s": 219.8101737499237,
+    "wall_time_saved_pct": 5.203754476843148,
+    "idle_gpu_hours_saved": 2.0460166796048487,
+    "fleet_utilization_gain_pct": 19.833587347319813,
+    "adjusted_wall_time_saved_s": 219.8101737499237
+  }
+}

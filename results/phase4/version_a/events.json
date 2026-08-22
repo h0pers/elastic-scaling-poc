@@ -1,0 +1,65 @@
+{
+  "version": "A",
+  "events": [
+    {
+      "label": "low_priority_submitted",
+      "time": 1787405608.130685,
+      "gpus": 8
+    },
+    {
+      "label": "low_priority_checkpoint_reached",
+      "time": 1787406603.277862,
+      "step": 100
+    },
+    {
+      "label": "high_priority_arrival",
+      "time": 1787406603.2779284
+    },
+    {
+      "label": "low_priority_initial_container_startup",
+      "time": 1787406603.3367653,
+      "container_startup_s": 2.0
+    },
+    {
+      "label": "low_priority_killed",
+      "time": 1787406603.381612
+    },
+    {
+      "label": "low_priority_gpus_released",
+      "time": 1787406608.401907
+    },
+    {
+      "label": "work_lost_measured",
+      "time": 1787406608.4059834,
+      "steps_lost": 0
+    },
+    {
+      "label": "high_priority_submitted",
+      "time": 1787406608.5012565,
+      "gpus": 4
+    },
+    {
+      "label": "high_priority_complete",
+      "time": 1787408203.518958
+    },
+    {
+      "label": "high_priority_container_startup",
+      "time": 1787408203.641984,
+      "container_startup_s": 2.0
+    },
+    {
+      "label": "low_priority_restarted",
+      "time": 1787408203.747571,
+      "gpus": 8
+    },
+    {
+      "label": "low_priority_restart_container_startup",
+      "time": 1787408203.847571,
+      "container_startup_s": 32.0
+    },
+    {
+      "label": "low_priority_complete",
+      "time": 1787409832.199571
+    }
+  ]
+}

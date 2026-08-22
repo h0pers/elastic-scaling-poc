@@ -1,0 +1,47 @@
+{
+  "run_name": "phase4-low-priority-8gpu",
+  "role": "low-priority",
+  "world_size": 8,
+  "model_id": "meta-llama/Llama-3.1-8B",
+  "dataset_id": "tatsu-lab/alpaca",
+  "max_steps": 300,
+  "resumed_from": null,
+  "total_train_time_s": null,
+  "timeline": [
+    {
+      "label": "script_started",
+      "elapsed_s": 0.0
+    },
+    {
+      "label": "torch_imported",
+      "elapsed_s": 0.0
+    },
+    {
+      "label": "libraries_imported",
+      "elapsed_s": 1.65
+    },
+    {
+      "label": "gpu_initialized",
+      "elapsed_s": 2.375
+    },
+    {
+      "label": "dataset_loaded",
+      "elapsed_s": 6.639
+    },
+    {
+      "label": "model_loaded",
+      "elapsed_s": 61.624
+    },
+    {
+      "label": "first_step_complete",
+      "elapsed_s": 71.769
+    }
+  ],
+  "losses": [],
+  "gpu_util_samples": 16,
+  "gpu_util_mean_pct": 98.25,
+  "gpu_util_max_pct": 100,
+  "gpu_mem_allocated_gb": 16.296,
+  "gpu_mem_reserved_gb": 21.873,
+  "gpu_mem_peak_gb": 20.718
+}
