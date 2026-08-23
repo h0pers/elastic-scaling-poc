@@ -163,7 +163,10 @@ def train_func(**parameters):
                 fh.write(json.dumps(record) + "\n")
 
         def on_train_begin(self, args, state, control, **kwargs):
-            self.metrics_path.write_text("")
+            # Do not truncate. The file is keyed on role and world size, so a
+            # restart at the same size would erase the earlier phase's records.
+            # Only rank 0 ever writes, so no file appears for the other ranks.
+            # The notebook calls clean_metrics between runs.
             self.sampler.reset()
             self.train_start = time.perf_counter()
             if resumed:
