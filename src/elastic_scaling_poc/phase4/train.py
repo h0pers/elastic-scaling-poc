@@ -202,6 +202,9 @@ def train_func(**parameters):
             }
             record.update(self.sampler.step_snapshot(self.step_sample_start))
             self._write(record)
+            # Progress marker the notebook reads from pod logs. The workbench's
+            # NFS client does not see files this pod writes.
+            print(f"[phase4] step={step}", flush=True)
 
         def on_log(self, args, state, control, logs=None, **kwargs):
             if not logs or global_rank() != 0 or "loss" not in logs:

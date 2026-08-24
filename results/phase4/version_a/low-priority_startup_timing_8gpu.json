@@ -6,7 +6,7 @@
   "dataset_id": "tatsu-lab/alpaca",
   "max_steps": 300,
   "resumed_from": "/mnt/kubeflow-checkpoints/phase4-low-priority/checkpoints/checkpoint-100",
-  "total_train_time_s": 1536.76,
+  "total_train_time_s": 1537.93,
   "timeline": [
     {
       "label": "script_started",
@@ -18,31 +18,31 @@
     },
     {
       "label": "libraries_imported",
-      "elapsed_s": 1.643
+      "elapsed_s": 1.808
     },
     {
       "label": "gpu_initialized",
-      "elapsed_s": 2.501
+      "elapsed_s": 2.56
     },
     {
       "label": "dataset_loaded",
-      "elapsed_s": 6.983
+      "elapsed_s": 6.636
     },
     {
       "label": "model_loaded",
-      "elapsed_s": 59.685
+      "elapsed_s": 55.495
     },
     {
       "label": "checkpoint_restored",
-      "elapsed_s": 69.756
+      "elapsed_s": 66.06
     },
     {
       "label": "first_step_complete",
-      "elapsed_s": 77.857
+      "elapsed_s": 74.109
     },
     {
       "label": "training_complete",
-      "elapsed_s": 1596.452
+      "elapsed_s": 1593.426
     }
   ],
   "losses": [
@@ -52,10 +52,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 101,
-      "loss": 0.9932535886764526,
+      "loss": 0.9924482107162476,
       "learning_rate": 0.0002,
       "epoch": 2.407185628742515,
-      "timestamp": 1787408303.2918563
+      "timestamp": 1787578738.1879785
     },
     {
       "type": "loss",
@@ -63,10 +63,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 102,
-      "loss": 0.9978926181793213,
+      "loss": 0.9972336888313293,
       "learning_rate": 0.0002,
       "epoch": 2.431137724550898,
-      "timestamp": 1787408310.7942326
+      "timestamp": 1787578745.6878495
     },
     {
       "type": "loss",
@@ -74,10 +74,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 103,
-      "loss": 1.0008600950241089,
+      "loss": 0.9999885559082031,
       "learning_rate": 0.0002,
       "epoch": 2.4550898203592815,
-      "timestamp": 1787408318.332527
+      "timestamp": 1787578753.238803
     },
     {
       "type": "loss",
@@ -85,10 +85,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 104,
-      "loss": 0.9940425753593445,
+      "loss": 0.9934871196746826,
       "learning_rate": 0.0002,
       "epoch": 2.479041916167665,
-      "timestamp": 1787408325.875625
+      "timestamp": 1787578760.7957013
     },
     {
       "type": "loss",
@@ -96,10 +96,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 105,
-      "loss": 0.9959075450897217,
+      "loss": 0.9949339628219604,
       "learning_rate": 0.0002,
       "epoch": 2.502994011976048,
-      "timestamp": 1787408333.4200222
+      "timestamp": 1787578768.3491588
     },
     {
       "type": "loss",
@@ -107,10 +107,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 106,
-      "loss": 0.9943190217018127,
+      "loss": 0.9936386346817017,
       "learning_rate": 0.0002,
       "epoch": 2.5269461077844313,
-      "timestamp": 1787408340.9741259
+      "timestamp": 1787578775.9071126
     },
     {
       "type": "loss",
@@ -118,10 +118,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 107,
-      "loss": 1.0021154880523682,
+      "loss": 1.0012297630310059,
       "learning_rate": 0.0002,
       "epoch": 2.5508982035928143,
-      "timestamp": 1787408348.7758102
+      "timestamp": 1787578783.586148
     },
     {
       "type": "loss",
@@ -129,10 +129,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 108,
-      "loss": 1.0553886890411377,
+      "loss": 1.0547759532928467,
       "learning_rate": 0.0002,
       "epoch": 2.5748502994011977,
-      "timestamp": 1787408356.7638958
+      "timestamp": 1787578791.7253783
     },
     {
       "type": "loss",
@@ -140,10 +140,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 109,
-      "loss": 0.9956734776496887,
+      "loss": 0.9955328702926636,
       "learning_rate": 0.0002,
       "epoch": 2.5988023952095807,
-      "timestamp": 1787408364.3409219
+      "timestamp": 1787578799.3100262
     },
     {
       "type": "loss",
@@ -151,10 +151,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 110,
-      "loss": 0.9951236248016357,
+      "loss": 0.9942440986633301,
       "learning_rate": 0.0002,
       "epoch": 2.622754491017964,
-      "timestamp": 1787408371.9159255
+      "timestamp": 1787578806.8939211
     },
     {
       "type": "loss",
@@ -162,10 +162,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 111,
-      "loss": 1.0510928630828857,
+      "loss": 1.0503520965576172,
       "learning_rate": 0.0002,
       "epoch": 2.6467065868263475,
-      "timestamp": 1787408379.502165
+      "timestamp": 1787578814.4953787
     },
     {
       "type": "loss",
@@ -173,10 +173,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 112,
-      "loss": 1.0006115436553955,
+      "loss": 0.9999000430107117,
       "learning_rate": 0.0002,
       "epoch": 2.6706586826347305,
-      "timestamp": 1787408387.0888727
+      "timestamp": 1787578822.0855455
     },
     {
       "type": "loss",
@@ -184,10 +184,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 113,
-      "loss": 0.9931586980819702,
+      "loss": 0.9927424192428589,
       "learning_rate": 0.0002,
       "epoch": 2.694610778443114,
-      "timestamp": 1787408394.676306
+      "timestamp": 1787578829.6837478
     },
     {
       "type": "loss",
@@ -195,10 +195,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 114,
-      "loss": 1.0229108333587646,
+      "loss": 1.0219910144805908,
       "learning_rate": 0.0002,
       "epoch": 2.718562874251497,
-      "timestamp": 1787408402.2659557
+      "timestamp": 1787578837.2937872
     },
     {
       "type": "loss",
@@ -206,10 +206,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 115,
-      "loss": 0.9958873391151428,
+      "loss": 0.9953182339668274,
       "learning_rate": 0.0002,
       "epoch": 2.7425149700598803,
-      "timestamp": 1787408410.284092
+      "timestamp": 1787578845.2042542
     },
     {
       "type": "loss",
@@ -217,10 +217,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 116,
-      "loss": 1.0219628810882568,
+      "loss": 1.0212891101837158,
       "learning_rate": 0.0002,
       "epoch": 2.7664670658682633,
-      "timestamp": 1787408417.8745875
+      "timestamp": 1787578852.7851512
     },
     {
       "type": "loss",
@@ -228,10 +228,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 117,
-      "loss": 1.0141903162002563,
+      "loss": 1.0135910511016846,
       "learning_rate": 0.0002,
       "epoch": 2.7904191616766467,
-      "timestamp": 1787408425.4843025
+      "timestamp": 1787578860.3894649
     },
     {
       "type": "loss",
@@ -239,10 +239,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 118,
-      "loss": 1.0066730976104736,
+      "loss": 1.006043791770935,
       "learning_rate": 0.0002,
       "epoch": 2.81437125748503,
-      "timestamp": 1787408433.0746064
+      "timestamp": 1787578867.9804838
     },
     {
       "type": "loss",
@@ -250,10 +250,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 119,
-      "loss": 0.988491415977478,
+      "loss": 0.9878478050231934,
       "learning_rate": 0.0002,
       "epoch": 2.838323353293413,
-      "timestamp": 1787408440.6680055
+      "timestamp": 1787578875.5844812
     },
     {
       "type": "loss",
@@ -261,10 +261,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 120,
-      "loss": 0.9948413968086243,
+      "loss": 0.9940841197967529,
       "learning_rate": 0.0002,
       "epoch": 2.8622754491017965,
-      "timestamp": 1787408448.2543123
+      "timestamp": 1787578883.1776817
     },
     {
       "type": "loss",
@@ -272,10 +272,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 121,
-      "loss": 1.018546462059021,
+      "loss": 1.0180492401123047,
       "learning_rate": 0.0002,
       "epoch": 2.8862275449101795,
-      "timestamp": 1787408455.851984
+      "timestamp": 1787578890.782733
     },
     {
       "type": "loss",
@@ -283,10 +283,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 122,
-      "loss": 0.9877245426177979,
+      "loss": 0.987387478351593,
       "learning_rate": 0.0002,
       "epoch": 2.910179640718563,
-      "timestamp": 1787408463.507277
+      "timestamp": 1787578898.415326
     },
     {
       "type": "loss",
@@ -294,10 +294,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 123,
-      "loss": 0.9949313402175903,
+      "loss": 0.9944341778755188,
       "learning_rate": 0.0002,
       "epoch": 2.934131736526946,
-      "timestamp": 1787408471.3331985
+      "timestamp": 1787578906.2541711
     },
     {
       "type": "loss",
@@ -305,10 +305,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 124,
-      "loss": 1.0048538446426392,
+      "loss": 1.0038888454437256,
       "learning_rate": 0.0002,
       "epoch": 2.9580838323353293,
-      "timestamp": 1787408478.9319432
+      "timestamp": 1787578913.8556986
     },
     {
       "type": "loss",
@@ -316,10 +316,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 125,
-      "loss": 1.0040655136108398,
+      "loss": 1.0035393238067627,
       "learning_rate": 0.0002,
       "epoch": 2.9820359281437128,
-      "timestamp": 1787408486.514521
+      "timestamp": 1787578921.4419112
     },
     {
       "type": "loss",
@@ -327,10 +327,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 126,
-      "loss": 0.9860899448394775,
+      "loss": 0.9854744672775269,
       "learning_rate": 0.0002,
       "epoch": 3.0,
-      "timestamp": 1787408492.2661872
+      "timestamp": 1787578927.2031024
     },
     {
       "type": "loss",
@@ -338,10 +338,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 127,
-      "loss": 1.0156642198562622,
+      "loss": 1.0149797201156616,
       "learning_rate": 0.0002,
       "epoch": 3.0239520958083834,
-      "timestamp": 1787408500.0352898
+      "timestamp": 1787578934.9908252
     },
     {
       "type": "loss",
@@ -349,10 +349,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 128,
-      "loss": 1.0058887004852295,
+      "loss": 1.0051792860031128,
       "learning_rate": 0.0002,
       "epoch": 3.0479041916167664,
-      "timestamp": 1787408507.6218474
+      "timestamp": 1787578942.586609
     },
     {
       "type": "loss",
@@ -360,10 +360,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 129,
-      "loss": 0.9713001251220703,
+      "loss": 0.9703998565673828,
       "learning_rate": 0.0002,
       "epoch": 3.07185628742515,
-      "timestamp": 1787408515.2105687
+      "timestamp": 1787578950.1778915
     },
     {
       "type": "loss",
@@ -371,10 +371,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 130,
-      "loss": 1.0121554136276245,
+      "loss": 1.0116088390350342,
       "learning_rate": 0.0002,
       "epoch": 3.095808383233533,
-      "timestamp": 1787408523.4520009
+      "timestamp": 1787578958.3824635
     },
     {
       "type": "loss",
@@ -382,10 +382,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 131,
-      "loss": 1.004461407661438,
+      "loss": 1.0037599802017212,
       "learning_rate": 0.0002,
       "epoch": 3.1197604790419162,
-      "timestamp": 1787408531.0248382
+      "timestamp": 1787578965.9629478
     },
     {
       "type": "loss",
@@ -393,10 +393,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 132,
-      "loss": 0.9929347038269043,
+      "loss": 0.9921776056289673,
       "learning_rate": 0.0002,
       "epoch": 3.143712574850299,
-      "timestamp": 1787408538.6071532
+      "timestamp": 1787578973.5523617
     },
     {
       "type": "loss",
@@ -404,10 +404,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 133,
-      "loss": 1.0221052169799805,
+      "loss": 1.0214217901229858,
       "learning_rate": 0.0002,
       "epoch": 3.1676646706586826,
-      "timestamp": 1787408546.2012942
+      "timestamp": 1787578981.1538155
     },
     {
       "type": "loss",
@@ -415,10 +415,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 134,
-      "loss": 0.9801561832427979,
+      "loss": 0.979331910610199,
       "learning_rate": 0.0002,
       "epoch": 3.191616766467066,
-      "timestamp": 1787408553.7988894
+      "timestamp": 1787578988.7589657
     },
     {
       "type": "loss",
@@ -426,10 +426,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 135,
-      "loss": 1.009843111038208,
+      "loss": 1.0091400146484375,
       "learning_rate": 0.0002,
       "epoch": 3.215568862275449,
-      "timestamp": 1787408561.373719
+      "timestamp": 1787578996.3467333
     },
     {
       "type": "loss",
@@ -437,10 +437,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 136,
-      "loss": 0.9969834089279175,
+      "loss": 0.996380090713501,
       "learning_rate": 0.0002,
       "epoch": 3.2395209580838324,
-      "timestamp": 1787408568.9474585
+      "timestamp": 1787579003.9184742
     },
     {
       "type": "loss",
@@ -448,10 +448,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 137,
-      "loss": 1.0310649871826172,
+      "loss": 1.030099630355835,
       "learning_rate": 0.0002,
       "epoch": 3.2634730538922154,
-      "timestamp": 1787408576.6069326
+      "timestamp": 1787579011.5629408
     },
     {
       "type": "loss",
@@ -459,10 +459,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 138,
-      "loss": 0.9836555123329163,
+      "loss": 0.9830195307731628,
       "learning_rate": 0.0002,
       "epoch": 3.287425149700599,
-      "timestamp": 1787408584.5206559
+      "timestamp": 1787579019.4917066
     },
     {
       "type": "loss",
@@ -470,10 +470,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 139,
-      "loss": 1.0261880159378052,
+      "loss": 1.0253372192382812,
       "learning_rate": 0.0002,
       "epoch": 3.3113772455089823,
-      "timestamp": 1787408592.0899384
+      "timestamp": 1787579027.0658154
     },
     {
       "type": "loss",
@@ -481,10 +481,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 140,
-      "loss": 1.0020685195922852,
+      "loss": 1.0014532804489136,
       "learning_rate": 0.0002,
       "epoch": 3.3353293413173652,
-      "timestamp": 1787408599.691024
+      "timestamp": 1787579034.6692483
     },
     {
       "type": "loss",
@@ -492,10 +492,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 141,
-      "loss": 0.9821205139160156,
+      "loss": 0.9812489151954651,
       "learning_rate": 0.0002,
       "epoch": 3.3592814371257487,
-      "timestamp": 1787408607.286853
+      "timestamp": 1787579042.265081
     },
     {
       "type": "loss",
@@ -503,10 +503,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 142,
-      "loss": 1.0151896476745605,
+      "loss": 1.0146677494049072,
       "learning_rate": 0.0002,
       "epoch": 3.3832335329341316,
-      "timestamp": 1787408614.8670654
+      "timestamp": 1787579049.8435938
     },
     {
       "type": "loss",
@@ -514,10 +514,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 143,
-      "loss": 0.9875560998916626,
+      "loss": 0.9870031476020813,
       "learning_rate": 0.0002,
       "epoch": 3.407185628742515,
-      "timestamp": 1787408622.4523256
+      "timestamp": 1787579057.4262106
     },
     {
       "type": "loss",
@@ -525,10 +525,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 144,
-      "loss": 1.006213903427124,
+      "loss": 1.0053200721740723,
       "learning_rate": 0.0002,
       "epoch": 3.431137724550898,
-      "timestamp": 1787408630.094154
+      "timestamp": 1787579065.0513835
     },
     {
       "type": "loss",
@@ -536,10 +536,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 145,
-      "loss": 0.9834519028663635,
+      "loss": 0.982521116733551,
       "learning_rate": 0.0002,
       "epoch": 3.4550898203592815,
-      "timestamp": 1787408637.9555578
+      "timestamp": 1787579072.9824815
     },
     {
       "type": "loss",
@@ -547,10 +547,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 146,
-      "loss": 0.9962140321731567,
+      "loss": 0.9955024719238281,
       "learning_rate": 0.0002,
       "epoch": 3.479041916167665,
-      "timestamp": 1787408645.7486775
+      "timestamp": 1787579080.7834613
     },
     {
       "type": "loss",
@@ -558,10 +558,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 147,
-      "loss": 0.9623753428459167,
+      "loss": 0.9619807004928589,
       "learning_rate": 0.0002,
       "epoch": 3.502994011976048,
-      "timestamp": 1787408653.3403764
+      "timestamp": 1787579088.3678727
     },
     {
       "type": "loss",
@@ -569,10 +569,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 148,
-      "loss": 0.9932268857955933,
+      "loss": 0.9925346374511719,
       "learning_rate": 0.0002,
       "epoch": 3.5269461077844313,
-      "timestamp": 1787408660.9415512
+      "timestamp": 1787579095.9611087
     },
     {
       "type": "loss",
@@ -580,10 +580,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 149,
-      "loss": 0.9991250038146973,
+      "loss": 0.9985723495483398,
       "learning_rate": 0.0002,
       "epoch": 3.5508982035928143,
-      "timestamp": 1787408668.5296345
+      "timestamp": 1787579103.5442007
     },
     {
       "type": "loss",
@@ -591,10 +591,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 150,
-      "loss": 1.0159218311309814,
+      "loss": 1.0151444673538208,
       "learning_rate": 0.0002,
       "epoch": 3.5748502994011977,
-      "timestamp": 1787408676.1230576
+      "timestamp": 1787579111.128557
     },
     {
       "type": "loss",
@@ -602,10 +602,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 151,
-      "loss": 1.0091841220855713,
+      "loss": 1.0085175037384033,
       "learning_rate": 0.0002,
       "epoch": 3.5988023952095807,
-      "timestamp": 1787408683.7076926
+      "timestamp": 1787579118.6951241
     },
     {
       "type": "loss",
@@ -613,10 +613,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 152,
-      "loss": 1.008575201034546,
+      "loss": 1.0080931186676025,
       "learning_rate": 0.0002,
       "epoch": 3.622754491017964,
-      "timestamp": 1787408691.3482232
+      "timestamp": 1787579126.3298047
     },
     {
       "type": "loss",
@@ -624,10 +624,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 153,
-      "loss": 1.0139896869659424,
+      "loss": 1.0134388208389282,
       "learning_rate": 0.0002,
       "epoch": 3.6467065868263475,
-      "timestamp": 1787408699.3807688
+      "timestamp": 1787579134.3987796
     },
     {
       "type": "loss",
@@ -635,10 +635,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 154,
-      "loss": 0.982841968536377,
+      "loss": 0.9824216961860657,
       "learning_rate": 0.0002,
       "epoch": 3.6706586826347305,
-      "timestamp": 1787408706.962678
+      "timestamp": 1787579141.9736712
     },
     {
       "type": "loss",
@@ -646,10 +646,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 155,
-      "loss": 0.99665367603302,
+      "loss": 0.9960175156593323,
       "learning_rate": 0.0002,
       "epoch": 3.694610778443114,
-      "timestamp": 1787408714.5535307
+      "timestamp": 1787579149.6984177
     },
     {
       "type": "loss",
@@ -657,10 +657,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 156,
-      "loss": 1.0033354759216309,
+      "loss": 1.0025471448898315,
       "learning_rate": 0.0002,
       "epoch": 3.718562874251497,
-      "timestamp": 1787408722.158193
+      "timestamp": 1787579157.2931356
     },
     {
       "type": "loss",
@@ -668,10 +668,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 157,
-      "loss": 1.0183782577514648,
+      "loss": 1.0175721645355225,
       "learning_rate": 0.0002,
       "epoch": 3.7425149700598803,
-      "timestamp": 1787408729.7483416
+      "timestamp": 1787579164.881232
     },
     {
       "type": "loss",
@@ -679,10 +679,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 158,
-      "loss": 1.0238120555877686,
+      "loss": 1.0230262279510498,
       "learning_rate": 0.0002,
       "epoch": 3.7664670658682633,
-      "timestamp": 1787408737.3360558
+      "timestamp": 1787579172.4630713
     },
     {
       "type": "loss",
@@ -690,10 +690,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 159,
-      "loss": 0.9842242002487183,
+      "loss": 0.9837846755981445,
       "learning_rate": 0.0002,
       "epoch": 3.7904191616766467,
-      "timestamp": 1787408744.9758775
+      "timestamp": 1787579180.0807724
     },
     {
       "type": "loss",
@@ -701,10 +701,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 160,
-      "loss": 0.9662951231002808,
+      "loss": 0.9661392569541931,
       "learning_rate": 0.0002,
       "epoch": 3.81437125748503,
-      "timestamp": 1787408752.9461615
+      "timestamp": 1787579188.165119
     },
     {
       "type": "loss",
@@ -712,10 +712,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 161,
-      "loss": 0.9814928770065308,
+      "loss": 0.9810200929641724,
       "learning_rate": 0.0002,
       "epoch": 3.838323353293413,
-      "timestamp": 1787408760.7413924
+      "timestamp": 1787579195.9318194
     },
     {
       "type": "loss",
@@ -723,10 +723,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 162,
-      "loss": 1.011900782585144,
+      "loss": 1.0112226009368896,
       "learning_rate": 0.0002,
       "epoch": 3.8622754491017965,
-      "timestamp": 1787408768.3336039
+      "timestamp": 1787579203.5099747
     },
     {
       "type": "loss",
@@ -734,10 +734,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 163,
-      "loss": 0.965111494064331,
+      "loss": 0.9643428921699524,
       "learning_rate": 0.0002,
       "epoch": 3.8862275449101795,
-      "timestamp": 1787408775.9352157
+      "timestamp": 1787579211.1010525
     },
     {
       "type": "loss",
@@ -745,10 +745,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 164,
-      "loss": 1.006912112236023,
+      "loss": 1.006421446800232,
       "learning_rate": 0.0002,
       "epoch": 3.910179640718563,
-      "timestamp": 1787408783.5158744
+      "timestamp": 1787579218.6784704
     },
     {
       "type": "loss",
@@ -756,10 +756,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 165,
-      "loss": 1.0162887573242188,
+      "loss": 1.0157864093780518,
       "learning_rate": 0.0002,
       "epoch": 3.934131736526946,
-      "timestamp": 1787408791.0992045
+      "timestamp": 1787579226.2583134
     },
     {
       "type": "loss",
@@ -767,10 +767,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 166,
-      "loss": 0.9760051965713501,
+      "loss": 0.9755086898803711,
       "learning_rate": 0.0002,
       "epoch": 3.9580838323353293,
-      "timestamp": 1787408798.6734505
+      "timestamp": 1787579233.8216622
     },
     {
       "type": "loss",
@@ -778,10 +778,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 167,
-      "loss": 0.9940964579582214,
+      "loss": 0.9936399459838867,
       "learning_rate": 0.0002,
       "epoch": 3.9820359281437128,
-      "timestamp": 1787408806.6368017
+      "timestamp": 1787579241.800795
     },
     {
       "type": "loss",
@@ -789,10 +789,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 168,
-      "loss": 1.0030220746994019,
+      "loss": 1.0024415254592896,
       "learning_rate": 0.0002,
       "epoch": 4.0,
-      "timestamp": 1787408812.808673
+      "timestamp": 1787579247.9302905
     },
     {
       "type": "loss",
@@ -800,10 +800,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 169,
-      "loss": 0.986556887626648,
+      "loss": 0.9855058193206787,
       "learning_rate": 0.0002,
       "epoch": 4.023952095808383,
-      "timestamp": 1787408820.5729547
+      "timestamp": 1787579255.7352777
     },
     {
       "type": "loss",
@@ -811,10 +811,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 170,
-      "loss": 0.9932692050933838,
+      "loss": 0.9926730394363403,
       "learning_rate": 0.0002,
       "epoch": 4.047904191616767,
-      "timestamp": 1787408828.1525397
+      "timestamp": 1787579263.3144765
     },
     {
       "type": "loss",
@@ -822,10 +822,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 171,
-      "loss": 0.9925056099891663,
+      "loss": 0.9919590950012207,
       "learning_rate": 0.0002,
       "epoch": 4.07185628742515,
-      "timestamp": 1787408835.7400491
+      "timestamp": 1787579270.898692
     },
     {
       "type": "loss",
@@ -833,10 +833,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 172,
-      "loss": 0.984286904335022,
+      "loss": 0.9836692810058594,
       "learning_rate": 0.0002,
       "epoch": 4.095808383233533,
-      "timestamp": 1787408843.310502
+      "timestamp": 1787579278.466078
     },
     {
       "type": "loss",
@@ -844,10 +844,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 173,
-      "loss": 0.9998962879180908,
+      "loss": 0.999059796333313,
       "learning_rate": 0.0002,
       "epoch": 4.119760479041916,
-      "timestamp": 1787408850.88385
+      "timestamp": 1787579286.0417793
     },
     {
       "type": "loss",
@@ -855,10 +855,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 174,
-      "loss": 0.9844998717308044,
+      "loss": 0.9837504625320435,
       "learning_rate": 0.0002,
       "epoch": 4.1437125748503,
-      "timestamp": 1787408858.683496
+      "timestamp": 1787579293.8470263
     },
     {
       "type": "loss",
@@ -866,10 +866,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 175,
-      "loss": 1.0094239711761475,
+      "loss": 1.0085734128952026,
       "learning_rate": 0.0002,
       "epoch": 4.167664670658683,
-      "timestamp": 1787408866.5234342
+      "timestamp": 1787579301.7427793
     },
     {
       "type": "loss",
@@ -877,10 +877,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 176,
-      "loss": 0.9951984882354736,
+      "loss": 0.9947760105133057,
       "learning_rate": 0.0002,
       "epoch": 4.191616766467066,
-      "timestamp": 1787408874.2638614
+      "timestamp": 1787579309.610622
     },
     {
       "type": "loss",
@@ -888,10 +888,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 177,
-      "loss": 1.0031306743621826,
+      "loss": 1.0019700527191162,
       "learning_rate": 0.0002,
       "epoch": 4.2155688622754495,
-      "timestamp": 1787408881.8366911
+      "timestamp": 1787579317.1834524
     },
     {
       "type": "loss",
@@ -899,10 +899,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 178,
-      "loss": 0.9883733987808228,
+      "loss": 0.9876066446304321,
       "learning_rate": 0.0002,
       "epoch": 4.2395209580838324,
-      "timestamp": 1787408889.4102728
+      "timestamp": 1787579324.7570705
     },
     {
       "type": "loss",
@@ -910,10 +910,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 179,
-      "loss": 0.9972034096717834,
+      "loss": 0.9965130090713501,
       "learning_rate": 0.0002,
       "epoch": 4.263473053892215,
-      "timestamp": 1787408896.98485
+      "timestamp": 1787579332.3403559
     },
     {
       "type": "loss",
@@ -921,10 +921,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 180,
-      "loss": 0.9881753921508789,
+      "loss": 0.9873050451278687,
       "learning_rate": 0.0002,
       "epoch": 4.287425149700598,
-      "timestamp": 1787408904.5667727
+      "timestamp": 1787579340.0958788
     },
     {
       "type": "loss",
@@ -932,10 +932,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 181,
-      "loss": 0.9929418563842773,
+      "loss": 0.9921523332595825,
       "learning_rate": 0.0002,
       "epoch": 4.311377245508982,
-      "timestamp": 1787408912.1893892
+      "timestamp": 1787579347.715856
     },
     {
       "type": "loss",
@@ -943,10 +943,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 182,
-      "loss": 0.9934557676315308,
+      "loss": 0.9929162263870239,
       "learning_rate": 0.0002,
       "epoch": 4.335329341317365,
-      "timestamp": 1787408919.9005823
+      "timestamp": 1787579355.4490714
     },
     {
       "type": "loss",
@@ -954,10 +954,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 183,
-      "loss": 0.9937864542007446,
+      "loss": 0.9930369257926941,
       "learning_rate": 0.0002,
       "epoch": 4.359281437125748,
-      "timestamp": 1787408927.8119805
+      "timestamp": 1787579363.3684433
     },
     {
       "type": "loss",
@@ -965,10 +965,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 184,
-      "loss": 0.9787005186080933,
+      "loss": 0.9778894186019897,
       "learning_rate": 0.0002,
       "epoch": 4.383233532934132,
-      "timestamp": 1787408935.4004328
+      "timestamp": 1787579370.9626515
     },
     {
       "type": "loss",
@@ -976,10 +976,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 185,
-      "loss": 0.9816359281539917,
+      "loss": 0.9807245135307312,
       "learning_rate": 0.0002,
       "epoch": 4.407185628742515,
-      "timestamp": 1787408942.9923387
+      "timestamp": 1787579378.5582063
     },
     {
       "type": "loss",
@@ -987,10 +987,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 186,
-      "loss": 0.9896535277366638,
+      "loss": 0.9891600608825684,
       "learning_rate": 0.0002,
       "epoch": 4.431137724550898,
-      "timestamp": 1787408950.5718088
+      "timestamp": 1787579386.1480145
     },
     {
       "type": "loss",
@@ -998,10 +998,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 187,
-      "loss": 0.9930213689804077,
+      "loss": 0.9922881126403809,
       "learning_rate": 0.0002,
       "epoch": 4.455089820359281,
-      "timestamp": 1787408958.16072
+      "timestamp": 1787579393.7413263
     },
     {
       "type": "loss",
@@ -1009,10 +1009,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 188,
-      "loss": 0.996112048625946,
+      "loss": 0.9954757690429688,
       "learning_rate": 0.0002,
       "epoch": 4.479041916167665,
-      "timestamp": 1787408965.7537477
+      "timestamp": 1787579401.3450153
     },
     {
       "type": "loss",
@@ -1020,10 +1020,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 189,
-      "loss": 1.0077720880508423,
+      "loss": 1.0067098140716553,
       "learning_rate": 0.0002,
       "epoch": 4.502994011976048,
-      "timestamp": 1787408973.708188
+      "timestamp": 1787579409.2933872
     },
     {
       "type": "loss",
@@ -1031,10 +1031,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 190,
-      "loss": 0.9657789468765259,
+      "loss": 0.9653465151786804,
       "learning_rate": 0.0002,
       "epoch": 4.526946107784431,
-      "timestamp": 1787408981.6256156
+      "timestamp": 1787579417.0529191
     },
     {
       "type": "loss",
@@ -1042,10 +1042,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 191,
-      "loss": 0.9756474494934082,
+      "loss": 0.9747844934463501,
       "learning_rate": 0.0002,
       "epoch": 4.550898203592815,
-      "timestamp": 1787408989.2128522
+      "timestamp": 1787579424.645154
     },
     {
       "type": "loss",
@@ -1053,10 +1053,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 192,
-      "loss": 1.0117692947387695,
+      "loss": 1.0108778476715088,
       "learning_rate": 0.0002,
       "epoch": 4.574850299401198,
-      "timestamp": 1787408996.8028357
+      "timestamp": 1787579432.2365177
     },
     {
       "type": "loss",
@@ -1064,10 +1064,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 193,
-      "loss": 1.0137536525726318,
+      "loss": 1.0127935409545898,
       "learning_rate": 0.0002,
       "epoch": 4.598802395209581,
-      "timestamp": 1787409004.375644
+      "timestamp": 1787579439.8074555
     },
     {
       "type": "loss",
@@ -1075,10 +1075,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 194,
-      "loss": 0.9639610052108765,
+      "loss": 0.9631504416465759,
       "learning_rate": 0.0002,
       "epoch": 4.6227544910179645,
-      "timestamp": 1787409011.9553616
+      "timestamp": 1787579447.389342
     },
     {
       "type": "loss",
@@ -1086,10 +1086,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 195,
-      "loss": 1.016484260559082,
+      "loss": 1.015195608139038,
       "learning_rate": 0.0002,
       "epoch": 4.6467065868263475,
-      "timestamp": 1787409019.5264583
+      "timestamp": 1787579454.9634814
     },
     {
       "type": "loss",
@@ -1097,10 +1097,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 196,
-      "loss": 0.979228138923645,
+      "loss": 0.9787200093269348,
       "learning_rate": 0.0002,
       "epoch": 4.6706586826347305,
-      "timestamp": 1787409027.1163385
+      "timestamp": 1787579462.5497413
     },
     {
       "type": "loss",
@@ -1108,10 +1108,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 197,
-      "loss": 0.9962153434753418,
+      "loss": 0.9956365823745728,
       "learning_rate": 0.0002,
       "epoch": 4.6946107784431135,
-      "timestamp": 1787409034.969224
+      "timestamp": 1787579470.357943
     },
     {
       "type": "loss",
@@ -1119,10 +1119,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 198,
-      "loss": 0.992891788482666,
+      "loss": 0.9915710687637329,
       "learning_rate": 0.0002,
       "epoch": 4.718562874251497,
-      "timestamp": 1787409042.6595628
+      "timestamp": 1787579478.079283
     },
     {
       "type": "loss",
@@ -1130,10 +1130,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 199,
-      "loss": 1.0205031633377075,
+      "loss": 1.0195443630218506,
       "learning_rate": 0.0002,
       "epoch": 4.74251497005988,
-      "timestamp": 1787409050.234738
+      "timestamp": 1787579485.657838
     },
     {
       "type": "loss",
@@ -1141,10 +1141,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 200,
-      "loss": 0.9904578328132629,
+      "loss": 0.9893062114715576,
       "learning_rate": 0.0002,
       "epoch": 4.766467065868263,
-      "timestamp": 1787409057.8239844
+      "timestamp": 1787579493.2563603
     },
     {
       "type": "loss",
@@ -1152,10 +1152,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 201,
-      "loss": 0.9838981628417969,
+      "loss": 0.9833332300186157,
       "learning_rate": 0.0002,
       "epoch": 4.790419161676647,
-      "timestamp": 1787409066.1209052
+      "timestamp": 1787579501.5646672
     },
     {
       "type": "loss",
@@ -1163,10 +1163,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 202,
-      "loss": 0.9922648668289185,
+      "loss": 0.9914003610610962,
       "learning_rate": 0.0002,
       "epoch": 4.81437125748503,
-      "timestamp": 1787409073.7086806
+      "timestamp": 1787579509.1568618
     },
     {
       "type": "loss",
@@ -1174,10 +1174,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 203,
-      "loss": 0.973594069480896,
+      "loss": 0.9728915095329285,
       "learning_rate": 0.0002,
       "epoch": 4.838323353293413,
-      "timestamp": 1787409081.2811594
+      "timestamp": 1787579516.7351453
     },
     {
       "type": "loss",
@@ -1185,10 +1185,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 204,
-      "loss": 0.9878801107406616,
+      "loss": 0.9871202707290649,
       "learning_rate": 0.0002,
       "epoch": 4.862275449101796,
-      "timestamp": 1787409088.9632337
+      "timestamp": 1787579524.3935497
     },
     {
       "type": "loss",
@@ -1196,10 +1196,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 205,
-      "loss": 1.001429557800293,
+      "loss": 1.0004045963287354,
       "learning_rate": 0.0002,
       "epoch": 4.88622754491018,
-      "timestamp": 1787409097.031614
+      "timestamp": 1787579532.646357
     },
     {
       "type": "loss",
@@ -1207,10 +1207,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 206,
-      "loss": 0.9908026456832886,
+      "loss": 0.9900718927383423,
       "learning_rate": 0.0002,
       "epoch": 4.910179640718563,
-      "timestamp": 1787409104.85619
+      "timestamp": 1787579540.4369016
     },
     {
       "type": "loss",
@@ -1218,10 +1218,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 207,
-      "loss": 0.9989520311355591,
+      "loss": 0.9980967044830322,
       "learning_rate": 0.0002,
       "epoch": 4.934131736526946,
-      "timestamp": 1787409112.4314847
+      "timestamp": 1787579548.0155149
     },
     {
       "type": "loss",
@@ -1229,10 +1229,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 208,
-      "loss": 0.9806053638458252,
+      "loss": 0.9796908497810364,
       "learning_rate": 0.0002,
       "epoch": 4.95808383233533,
-      "timestamp": 1787409120.0059276
+      "timestamp": 1787579555.5969234
     },
     {
       "type": "loss",
@@ -1240,10 +1240,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 209,
-      "loss": 1.0071907043457031,
+      "loss": 1.0066487789154053,
       "learning_rate": 0.0002,
       "epoch": 4.982035928143713,
-      "timestamp": 1787409127.5833797
+      "timestamp": 1787579563.1737695
     },
     {
       "type": "loss",
@@ -1251,10 +1251,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 210,
-      "loss": 0.9927154779434204,
+      "loss": 0.9918193221092224,
       "learning_rate": 0.0002,
       "epoch": 5.0,
-      "timestamp": 1787409133.3620915
+      "timestamp": 1787579568.955699
     },
     {
       "type": "loss",
@@ -1262,10 +1262,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 211,
-      "loss": 1.002043604850769,
+      "loss": 1.0011924505233765,
       "learning_rate": 0.0002,
       "epoch": 5.023952095808383,
-      "timestamp": 1787409141.2188382
+      "timestamp": 1787579576.7904177
     },
     {
       "type": "loss",
@@ -1273,10 +1273,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 212,
-      "loss": 0.9787700176239014,
+      "loss": 0.9775523543357849,
       "learning_rate": 0.0002,
       "epoch": 5.047904191616767,
-      "timestamp": 1787409149.179289
+      "timestamp": 1787579584.7813635
     },
     {
       "type": "loss",
@@ -1284,10 +1284,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 213,
-      "loss": 0.9979933500289917,
+      "loss": 0.9972668886184692,
       "learning_rate": 0.0002,
       "epoch": 5.07185628742515,
-      "timestamp": 1787409157.1768594
+      "timestamp": 1787579592.8488986
     },
     {
       "type": "loss",
@@ -1295,10 +1295,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 214,
-      "loss": 0.9741644263267517,
+      "loss": 0.9734068512916565,
       "learning_rate": 0.0002,
       "epoch": 5.095808383233533,
-      "timestamp": 1787409164.7453659
+      "timestamp": 1787579600.419588
     },
     {
       "type": "loss",
@@ -1306,10 +1306,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 215,
-      "loss": 0.9841572046279907,
+      "loss": 0.9831780195236206,
       "learning_rate": 0.0002,
       "epoch": 5.119760479041916,
-      "timestamp": 1787409172.3116083
+      "timestamp": 1787579607.984748
     },
     {
       "type": "loss",
@@ -1317,10 +1317,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 216,
-      "loss": 1.0079922676086426,
+      "loss": 1.0070182085037231,
       "learning_rate": 0.0002,
       "epoch": 5.1437125748503,
-      "timestamp": 1787409179.8698165
+      "timestamp": 1787579615.5453534
     },
     {
       "type": "loss",
@@ -1328,10 +1328,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 217,
-      "loss": 0.9662618041038513,
+      "loss": 0.9651481509208679,
       "learning_rate": 0.0002,
       "epoch": 5.167664670658683,
-      "timestamp": 1787409187.4454625
+      "timestamp": 1787579623.1175885
     },
     {
       "type": "loss",
@@ -1339,10 +1339,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 218,
-      "loss": 0.9939295053482056,
+      "loss": 0.9928996562957764,
       "learning_rate": 0.0002,
       "epoch": 5.191616766467066,
-      "timestamp": 1787409195.0260875
+      "timestamp": 1787579630.6990783
     },
     {
       "type": "loss",
@@ -1350,10 +1350,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 219,
-      "loss": 1.0048601627349854,
+      "loss": 1.0034675598144531,
       "learning_rate": 0.0002,
       "epoch": 5.2155688622754495,
-      "timestamp": 1787409202.6802323
+      "timestamp": 1787579638.3423579
     },
     {
       "type": "loss",
@@ -1361,10 +1361,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 220,
-      "loss": 0.9911370277404785,
+      "loss": 0.9899488091468811,
       "learning_rate": 0.0002,
       "epoch": 5.2395209580838324,
-      "timestamp": 1787409210.7397783
+      "timestamp": 1787579646.4332106
     },
     {
       "type": "loss",
@@ -1372,10 +1372,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 221,
-      "loss": 0.9949287176132202,
+      "loss": 0.993659257888794,
       "learning_rate": 0.0002,
       "epoch": 5.263473053892215,
-      "timestamp": 1787409218.3246264
+      "timestamp": 1787579654.015631
     },
     {
       "type": "loss",
@@ -1383,10 +1383,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 222,
-      "loss": 0.9623315334320068,
+      "loss": 0.9611001014709473,
       "learning_rate": 0.0002,
       "epoch": 5.287425149700598,
-      "timestamp": 1787409225.9077463
+      "timestamp": 1787579661.5981972
     },
     {
       "type": "loss",
@@ -1394,10 +1394,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 223,
-      "loss": 1.0010826587677002,
+      "loss": 0.999860942363739,
       "learning_rate": 0.0002,
       "epoch": 5.311377245508982,
-      "timestamp": 1787409233.4893608
+      "timestamp": 1787579669.1839542
     },
     {
       "type": "loss",
@@ -1405,10 +1405,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 224,
-      "loss": 0.9783803224563599,
+      "loss": 0.9772607684135437,
       "learning_rate": 0.0002,
       "epoch": 5.335329341317365,
-      "timestamp": 1787409241.0486407
+      "timestamp": 1787579676.7497618
     },
     {
       "type": "loss",
@@ -1416,10 +1416,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 225,
-      "loss": 0.9841939806938171,
+      "loss": 0.9825698137283325,
       "learning_rate": 0.0002,
       "epoch": 5.359281437125748,
-      "timestamp": 1787409248.6441593
+      "timestamp": 1787579684.3382432
     },
     {
       "type": "loss",
@@ -1427,10 +1427,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 226,
-      "loss": 0.9802592992782593,
+      "loss": 0.9791655540466309,
       "learning_rate": 0.0002,
       "epoch": 5.383233532934132,
-      "timestamp": 1787409256.4218092
+      "timestamp": 1787579692.119022
     },
     {
       "type": "loss",
@@ -1438,10 +1438,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 227,
-      "loss": 0.9737290740013123,
+      "loss": 0.9729349613189697,
       "learning_rate": 0.0002,
       "epoch": 5.407185628742515,
-      "timestamp": 1787409264.4397902
+      "timestamp": 1787579699.9558856
     },
     {
       "type": "loss",
@@ -1449,10 +1449,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 228,
-      "loss": 0.9544677138328552,
+      "loss": 0.9535501599311829,
       "learning_rate": 0.0002,
       "epoch": 5.431137724550898,
-      "timestamp": 1787409272.2602463
+      "timestamp": 1787579707.7812266
     },
     {
       "type": "loss",
@@ -1460,10 +1460,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 229,
-      "loss": 0.9902294874191284,
+      "loss": 0.9891318678855896,
       "learning_rate": 0.0002,
       "epoch": 5.455089820359281,
-      "timestamp": 1787409279.8294592
+      "timestamp": 1787579715.3522847
     },
     {
       "type": "loss",
@@ -1471,10 +1471,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 230,
-      "loss": 0.9972332119941711,
+      "loss": 0.9965741634368896,
       "learning_rate": 0.0002,
       "epoch": 5.479041916167665,
-      "timestamp": 1787409287.4141831
+      "timestamp": 1787579722.9351623
     },
     {
       "type": "loss",
@@ -1482,10 +1482,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 231,
-      "loss": 0.970793604850769,
+      "loss": 0.9695299863815308,
       "learning_rate": 0.0002,
       "epoch": 5.502994011976048,
-      "timestamp": 1787409294.9780447
+      "timestamp": 1787579730.496273
     },
     {
       "type": "loss",
@@ -1493,10 +1493,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 232,
-      "loss": 0.9835931062698364,
+      "loss": 0.9824584722518921,
       "learning_rate": 0.0002,
       "epoch": 5.526946107784431,
-      "timestamp": 1787409302.5608819
+      "timestamp": 1787579738.0789416
     },
     {
       "type": "loss",
@@ -1504,10 +1504,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 233,
-      "loss": 0.9642512202262878,
+      "loss": 0.9628637433052063,
       "learning_rate": 0.0002,
       "epoch": 5.550898203592815,
-      "timestamp": 1787409310.1543899
+      "timestamp": 1787579745.6651149
     },
     {
       "type": "loss",
@@ -1515,10 +1515,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 234,
-      "loss": 1.0005805492401123,
+      "loss": 0.9995874166488647,
       "learning_rate": 0.0002,
       "epoch": 5.574850299401198,
-      "timestamp": 1787409318.025812
+      "timestamp": 1787579753.3625848
     },
     {
       "type": "loss",
@@ -1526,10 +1526,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 235,
-      "loss": 0.9917605519294739,
+      "loss": 0.9903339147567749,
       "learning_rate": 0.0002,
       "epoch": 5.598802395209581,
-      "timestamp": 1787409325.9076126
+      "timestamp": 1787579761.4593756
     },
     {
       "type": "loss",
@@ -1537,10 +1537,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 236,
-      "loss": 0.9741884469985962,
+      "loss": 0.9733110666275024,
       "learning_rate": 0.0002,
       "epoch": 5.6227544910179645,
-      "timestamp": 1787409333.4808128
+      "timestamp": 1787579769.0335836
     },
     {
       "type": "loss",
@@ -1548,10 +1548,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 237,
-      "loss": 1.017577886581421,
+      "loss": 1.0166072845458984,
       "learning_rate": 0.0002,
       "epoch": 5.6467065868263475,
-      "timestamp": 1787409341.058929
+      "timestamp": 1787579776.658928
     },
     {
       "type": "loss",
@@ -1559,10 +1559,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 238,
-      "loss": 0.9654486179351807,
+      "loss": 0.9642808437347412,
       "learning_rate": 0.0002,
       "epoch": 5.6706586826347305,
-      "timestamp": 1787409348.612107
+      "timestamp": 1787579784.216215
     },
     {
       "type": "loss",
@@ -1570,10 +1570,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 239,
-      "loss": 1.0017949342727661,
+      "loss": 1.0005879402160645,
       "learning_rate": 0.0002,
       "epoch": 5.6946107784431135,
-      "timestamp": 1787409356.1896315
+      "timestamp": 1787579791.7986012
     },
     {
       "type": "loss",
@@ -1581,10 +1581,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 240,
-      "loss": 0.9741878509521484,
+      "loss": 0.9731906652450562,
       "learning_rate": 0.0002,
       "epoch": 5.718562874251497,
-      "timestamp": 1787409363.7680094
+      "timestamp": 1787579799.3761082
     },
     {
       "type": "loss",
@@ -1592,10 +1592,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 241,
-      "loss": 0.9852837324142456,
+      "loss": 0.9837493300437927,
       "learning_rate": 0.0002,
       "epoch": 5.74251497005988,
-      "timestamp": 1787409371.3678257
+      "timestamp": 1787579806.9817505
     },
     {
       "type": "loss",
@@ -1603,10 +1603,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 242,
-      "loss": 0.9738940000534058,
+      "loss": 0.9730716943740845,
       "learning_rate": 0.0002,
       "epoch": 5.766467065868263,
-      "timestamp": 1787409379.1462893
+      "timestamp": 1787579814.8000972
     },
     {
       "type": "loss",
@@ -1614,10 +1614,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 243,
-      "loss": 0.9778851270675659,
+      "loss": 0.9774770140647888,
       "learning_rate": 0.0002,
       "epoch": 5.790419161676647,
-      "timestamp": 1787409386.8950286
+      "timestamp": 1787579822.5897958
     },
     {
       "type": "loss",
@@ -1625,10 +1625,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 244,
-      "loss": 1.0026006698608398,
+      "loss": 1.0015195608139038,
       "learning_rate": 0.0002,
       "epoch": 5.81437125748503,
-      "timestamp": 1787409394.490189
+      "timestamp": 1787579830.1891694
     },
     {
       "type": "loss",
@@ -1636,10 +1636,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 245,
-      "loss": 0.9939435720443726,
+      "loss": 0.9926908016204834,
       "learning_rate": 0.0002,
       "epoch": 5.838323353293413,
-      "timestamp": 1787409402.0584157
+      "timestamp": 1787579837.7604258
     },
     {
       "type": "loss",
@@ -1647,10 +1647,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 246,
-      "loss": 0.996431291103363,
+      "loss": 0.9957036972045898,
       "learning_rate": 0.0002,
       "epoch": 5.862275449101796,
-      "timestamp": 1787409409.615625
+      "timestamp": 1787579845.3192685
     },
     {
       "type": "loss",
@@ -1658,10 +1658,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 247,
-      "loss": 0.9671354293823242,
+      "loss": 0.9659399390220642,
       "learning_rate": 0.0002,
       "epoch": 5.88622754491018,
-      "timestamp": 1787409417.1961708
+      "timestamp": 1787579852.898718
     },
     {
       "type": "loss",
@@ -1669,10 +1669,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 248,
-      "loss": 0.9734184741973877,
+      "loss": 0.9728769063949585,
       "learning_rate": 0.0002,
       "epoch": 5.910179640718563,
-      "timestamp": 1787409424.781061
+      "timestamp": 1787579860.4803085
     },
     {
       "type": "loss",
@@ -1680,10 +1680,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 249,
-      "loss": 0.9948985576629639,
+      "loss": 0.9939368367195129,
       "learning_rate": 0.0002,
       "epoch": 5.934131736526946,
-      "timestamp": 1787409432.6583252
+      "timestamp": 1787579868.4128358
     },
     {
       "type": "loss",
@@ -1691,10 +1691,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 250,
-      "loss": 0.9787024855613708,
+      "loss": 0.9775187969207764,
       "learning_rate": 0.0002,
       "epoch": 5.95808383233533,
-      "timestamp": 1787409440.6612856
+      "timestamp": 1787579876.4843605
     },
     {
       "type": "loss",
@@ -1702,10 +1702,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 251,
-      "loss": 0.9972568154335022,
+      "loss": 0.9961422681808472,
       "learning_rate": 0.0002,
       "epoch": 5.982035928143713,
-      "timestamp": 1787409448.2342288
+      "timestamp": 1787579884.052538
     },
     {
       "type": "loss",
@@ -1713,10 +1713,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 252,
-      "loss": 1.0229532718658447,
+      "loss": 1.0220588445663452,
       "learning_rate": 0.0002,
       "epoch": 6.0,
-      "timestamp": 1787409454.0076346
+      "timestamp": 1787579889.825985
     },
     {
       "type": "loss",
@@ -1724,10 +1724,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 253,
-      "loss": 0.9962607622146606,
+      "loss": 0.9950010776519775,
       "learning_rate": 0.0002,
       "epoch": 6.023952095808383,
-      "timestamp": 1787409461.7492359
+      "timestamp": 1787579897.577875
     },
     {
       "type": "loss",
@@ -1735,10 +1735,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 254,
-      "loss": 0.9744226932525635,
+      "loss": 0.9732357263565063,
       "learning_rate": 0.0002,
       "epoch": 6.047904191616767,
-      "timestamp": 1787409469.3264213
+      "timestamp": 1787579905.1544096
     },
     {
       "type": "loss",
@@ -1746,10 +1746,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 255,
-      "loss": 0.9906681776046753,
+      "loss": 0.9891397356987,
       "learning_rate": 0.0002,
       "epoch": 6.07185628742515,
-      "timestamp": 1787409476.9135904
+      "timestamp": 1787579912.7345526
     },
     {
       "type": "loss",
@@ -1757,10 +1757,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 256,
-      "loss": 0.9722189903259277,
+      "loss": 0.970594048500061,
       "learning_rate": 0.0002,
       "epoch": 6.095808383233533,
-      "timestamp": 1787409484.5024514
+      "timestamp": 1787579920.318292
     },
     {
       "type": "loss",
@@ -1768,10 +1768,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 257,
-      "loss": 0.9651814699172974,
+      "loss": 0.9636988639831543,
       "learning_rate": 0.0002,
       "epoch": 6.119760479041916,
-      "timestamp": 1787409492.6049476
+      "timestamp": 1787579928.461441
     },
     {
       "type": "loss",
@@ -1779,10 +1779,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 258,
-      "loss": 0.976432740688324,
+      "loss": 0.9749171137809753,
       "learning_rate": 0.0002,
       "epoch": 6.1437125748503,
-      "timestamp": 1787409500.5786576
+      "timestamp": 1787579936.454248
     },
     {
       "type": "loss",
@@ -1790,10 +1790,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 259,
-      "loss": 0.9864379167556763,
+      "loss": 0.9849740862846375,
       "learning_rate": 0.0002,
       "epoch": 6.167664670658683,
-      "timestamp": 1787409508.168085
+      "timestamp": 1787579944.0432355
     },
     {
       "type": "loss",
@@ -1801,10 +1801,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 260,
-      "loss": 0.982249915599823,
+      "loss": 0.9805816411972046,
       "learning_rate": 0.0002,
       "epoch": 6.191616766467066,
-      "timestamp": 1787409515.7586176
+      "timestamp": 1787579951.636717
     },
     {
       "type": "loss",
@@ -1812,10 +1812,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 261,
-      "loss": 0.982660174369812,
+      "loss": 0.9812315702438354,
       "learning_rate": 0.0002,
       "epoch": 6.2155688622754495,
-      "timestamp": 1787409523.3288336
+      "timestamp": 1787579959.2093253
     },
     {
       "type": "loss",
@@ -1823,10 +1823,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 262,
-      "loss": 0.9702444076538086,
+      "loss": 0.9691625833511353,
       "learning_rate": 0.0002,
       "epoch": 6.2395209580838324,
-      "timestamp": 1787409530.9162488
+      "timestamp": 1787579966.796302
     },
     {
       "type": "loss",
@@ -1834,10 +1834,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 263,
-      "loss": 0.9457235336303711,
+      "loss": 0.9440394639968872,
       "learning_rate": 0.0002,
       "epoch": 6.263473053892215,
-      "timestamp": 1787409538.5025508
+      "timestamp": 1787579974.3806255
     },
     {
       "type": "loss",
@@ -1845,10 +1845,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 264,
-      "loss": 0.9929356575012207,
+      "loss": 0.9916117787361145,
       "learning_rate": 0.0002,
       "epoch": 6.287425149700598,
-      "timestamp": 1787409546.15379
+      "timestamp": 1787579982.036569
     },
     {
       "type": "loss",
@@ -1856,10 +1856,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 265,
-      "loss": 0.9993745684623718,
+      "loss": 0.9978286027908325,
       "learning_rate": 0.0002,
       "epoch": 6.311377245508982,
-      "timestamp": 1787409554.0802276
+      "timestamp": 1787579990.0270972
     },
     {
       "type": "loss",
@@ -1867,10 +1867,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 266,
-      "loss": 0.951681911945343,
+      "loss": 0.9506843090057373,
       "learning_rate": 0.0002,
       "epoch": 6.335329341317365,
-      "timestamp": 1787409561.6703389
+      "timestamp": 1787579997.614447
     },
     {
       "type": "loss",
@@ -1878,10 +1878,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 267,
-      "loss": 0.9794479608535767,
+      "loss": 0.9782565832138062,
       "learning_rate": 0.0002,
       "epoch": 6.359281437125748,
-      "timestamp": 1787409569.2733703
+      "timestamp": 1787580005.2092178
     },
     {
       "type": "loss",
@@ -1889,10 +1889,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 268,
-      "loss": 0.9687975645065308,
+      "loss": 0.9672888517379761,
       "learning_rate": 0.0002,
       "epoch": 6.383233532934132,
-      "timestamp": 1787409576.8612347
+      "timestamp": 1787580012.7987213
     },
     {
       "type": "loss",
@@ -1900,10 +1900,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 269,
-      "loss": 0.9746605753898621,
+      "loss": 0.9729244709014893,
       "learning_rate": 0.0002,
       "epoch": 6.407185628742515,
-      "timestamp": 1787409584.4500022
+      "timestamp": 1787580020.3798523
     },
     {
       "type": "loss",
@@ -1911,10 +1911,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 270,
-      "loss": 0.9759487509727478,
+      "loss": 0.9744898080825806,
       "learning_rate": 0.0002,
       "epoch": 6.431137724550898,
-      "timestamp": 1787409592.0339482
+      "timestamp": 1787580027.9655771
     },
     {
       "type": "loss",
@@ -1922,10 +1922,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 271,
-      "loss": 1.0223982334136963,
+      "loss": 1.0204557180404663,
       "learning_rate": 0.0002,
       "epoch": 6.455089820359281,
-      "timestamp": 1787409599.6179433
+      "timestamp": 1787580035.5506828
     },
     {
       "type": "loss",
@@ -1933,10 +1933,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 272,
-      "loss": 0.9962320327758789,
+      "loss": 0.994625985622406,
       "learning_rate": 0.0002,
       "epoch": 6.479041916167665,
-      "timestamp": 1787409607.6286352
+      "timestamp": 1787580043.5428874
     },
     {
       "type": "loss",
@@ -1944,10 +1944,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 273,
-      "loss": 0.9933763742446899,
+      "loss": 0.9924700856208801,
       "learning_rate": 0.0002,
       "epoch": 6.502994011976048,
-      "timestamp": 1787409615.5831776
+      "timestamp": 1787580051.3461633
     },
     {
       "type": "loss",
@@ -1955,10 +1955,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 274,
-      "loss": 0.9744713306427002,
+      "loss": 0.9727850556373596,
       "learning_rate": 0.0002,
       "epoch": 6.526946107784431,
-      "timestamp": 1787409623.1645548
+      "timestamp": 1787580058.9283257
     },
     {
       "type": "loss",
@@ -1966,10 +1966,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 275,
-      "loss": 0.9674372673034668,
+      "loss": 0.9662266969680786,
       "learning_rate": 0.0002,
       "epoch": 6.550898203592815,
-      "timestamp": 1787409630.7450502
+      "timestamp": 1787580066.512683
     },
     {
       "type": "loss",
@@ -1977,10 +1977,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 276,
-      "loss": 0.9777213335037231,
+      "loss": 0.9759520292282104,
       "learning_rate": 0.0002,
       "epoch": 6.574850299401198,
-      "timestamp": 1787409638.3110964
+      "timestamp": 1787580074.075942
     },
     {
       "type": "loss",
@@ -1988,10 +1988,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 277,
-      "loss": 0.9660153985023499,
+      "loss": 0.9648846387863159,
       "learning_rate": 0.0002,
       "epoch": 6.598802395209581,
-      "timestamp": 1787409645.9004576
+      "timestamp": 1787580081.6659384
     },
     {
       "type": "loss",
@@ -1999,10 +1999,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 278,
-      "loss": 0.9946297407150269,
+      "loss": 0.9928914308547974,
       "learning_rate": 0.0002,
       "epoch": 6.6227544910179645,
-      "timestamp": 1787409653.48767
+      "timestamp": 1787580089.2556102
     },
     {
       "type": "loss",
@@ -2010,10 +2010,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 279,
-      "loss": 0.9529015421867371,
+      "loss": 0.9510005712509155,
       "learning_rate": 0.0002,
       "epoch": 6.6467065868263475,
-      "timestamp": 1787409661.3474722
+      "timestamp": 1787580096.9230099
     },
     {
       "type": "loss",
@@ -2021,10 +2021,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 280,
-      "loss": 0.9754897356033325,
+      "loss": 0.9743568301200867,
       "learning_rate": 0.0002,
       "epoch": 6.6706586826347305,
-      "timestamp": 1787409669.4191825
+      "timestamp": 1787580104.9821265
     },
     {
       "type": "loss",
@@ -2032,10 +2032,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 281,
-      "loss": 0.9921420812606812,
+      "loss": 0.9905349612236023,
       "learning_rate": 0.0002,
       "epoch": 6.6946107784431135,
-      "timestamp": 1787409677.0001707
+      "timestamp": 1787580112.5636632
     },
     {
       "type": "loss",
@@ -2043,10 +2043,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 282,
-      "loss": 0.980717658996582,
+      "loss": 0.9792672395706177,
       "learning_rate": 0.0002,
       "epoch": 6.718562874251497,
-      "timestamp": 1787409684.5928793
+      "timestamp": 1787580120.1612256
     },
     {
       "type": "loss",
@@ -2054,10 +2054,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 283,
-      "loss": 0.9788489937782288,
+      "loss": 0.9774671792984009,
       "learning_rate": 0.0002,
       "epoch": 6.74251497005988,
-      "timestamp": 1787409692.15331
+      "timestamp": 1787580127.7238133
     },
     {
       "type": "loss",
@@ -2065,10 +2065,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 284,
-      "loss": 0.9921354055404663,
+      "loss": 0.990981936454773,
       "learning_rate": 0.0002,
       "epoch": 6.766467065868263,
-      "timestamp": 1787409699.7205303
+      "timestamp": 1787580135.2929182
     },
     {
       "type": "loss",
@@ -2076,10 +2076,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 285,
-      "loss": 0.9893456697463989,
+      "loss": 0.9881749153137207,
       "learning_rate": 0.0002,
       "epoch": 6.790419161676647,
-      "timestamp": 1787409707.276247
+      "timestamp": 1787580142.8555837
     },
     {
       "type": "loss",
@@ -2087,10 +2087,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 286,
-      "loss": 0.984481930732727,
+      "loss": 0.9830218553543091,
       "learning_rate": 0.0002,
       "epoch": 6.81437125748503,
-      "timestamp": 1787409714.859022
+      "timestamp": 1787580150.4458616
     },
     {
       "type": "loss",
@@ -2098,10 +2098,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 287,
-      "loss": 0.9859362840652466,
+      "loss": 0.9844725131988525,
       "learning_rate": 0.0002,
       "epoch": 6.838323353293413,
-      "timestamp": 1787409723.0418243
+      "timestamp": 1787580158.4257777
     },
     {
       "type": "loss",
@@ -2109,10 +2109,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 288,
-      "loss": 0.9975656270980835,
+      "loss": 0.9963482618331909,
       "learning_rate": 0.0002,
       "epoch": 6.862275449101796,
-      "timestamp": 1787409730.7844737
+      "timestamp": 1787580166.2972674
     },
     {
       "type": "loss",
@@ -2120,10 +2120,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 289,
-      "loss": 0.9766324758529663,
+      "loss": 0.9754315614700317,
       "learning_rate": 0.0002,
       "epoch": 6.88622754491018,
-      "timestamp": 1787409738.681598
+      "timestamp": 1787580173.8880486
     },
     {
       "type": "loss",
@@ -2131,10 +2131,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 290,
-      "loss": 0.964056134223938,
+      "loss": 0.9625295996665955,
       "learning_rate": 0.0002,
       "epoch": 6.910179640718563,
-      "timestamp": 1787409746.2586694
+      "timestamp": 1787580181.4718294
     },
     {
       "type": "loss",
@@ -2142,10 +2142,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 291,
-      "loss": 1.0017130374908447,
+      "loss": 1.0004043579101562,
       "learning_rate": 0.0002,
       "epoch": 6.934131736526946,
-      "timestamp": 1787409753.8354712
+      "timestamp": 1787580189.0641565
     },
     {
       "type": "loss",
@@ -2153,10 +2153,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 292,
-      "loss": 0.9738469123840332,
+      "loss": 0.972222089767456,
       "learning_rate": 0.0002,
       "epoch": 6.95808383233533,
-      "timestamp": 1787409761.4159694
+      "timestamp": 1787580196.6372836
     },
     {
       "type": "loss",
@@ -2164,10 +2164,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 293,
-      "loss": 0.9534281492233276,
+      "loss": 0.9524474143981934,
       "learning_rate": 0.0002,
       "epoch": 6.982035928143713,
-      "timestamp": 1787409768.9887302
+      "timestamp": 1787580204.2070282
     },
     {
       "type": "loss",
@@ -2175,10 +2175,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 294,
-      "loss": 0.9642003774642944,
+      "loss": 0.9628703594207764,
       "learning_rate": 0.0002,
       "epoch": 7.0,
-      "timestamp": 1787409774.8946662
+      "timestamp": 1787580210.0713665
     },
     {
       "type": "loss",
@@ -2186,10 +2186,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 295,
-      "loss": 0.9661800861358643,
+      "loss": 0.9644390344619751,
       "learning_rate": 0.0002,
       "epoch": 7.023952095808383,
-      "timestamp": 1787409783.17975
+      "timestamp": 1787580218.3874183
     },
     {
       "type": "loss",
@@ -2197,10 +2197,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 296,
-      "loss": 0.9719812870025635,
+      "loss": 0.970395565032959,
       "learning_rate": 0.0002,
       "epoch": 7.047904191616767,
-      "timestamp": 1787409790.7542286
+      "timestamp": 1787580226.089302
     },
     {
       "type": "loss",
@@ -2208,10 +2208,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 297,
-      "loss": 0.9622275829315186,
+      "loss": 0.9603604078292847,
       "learning_rate": 0.0002,
       "epoch": 7.07185628742515,
-      "timestamp": 1787409798.3454993
+      "timestamp": 1787580233.6839025
     },
     {
       "type": "loss",
@@ -2219,10 +2219,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 298,
-      "loss": 0.9767162799835205,
+      "loss": 0.9748663902282715,
       "learning_rate": 0.0002,
       "epoch": 7.095808383233533,
-      "timestamp": 1787409805.9369678
+      "timestamp": 1787580241.2790759
     },
     {
       "type": "loss",
@@ -2230,10 +2230,10 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 299,
-      "loss": 0.9684288501739502,
+      "loss": 0.9667272567749023,
       "learning_rate": 0.0002,
       "epoch": 7.119760479041916,
-      "timestamp": 1787409813.5371878
+      "timestamp": 1787580248.884281
     },
     {
       "type": "loss",
@@ -2241,14 +2241,14 @@
       "role": "low-priority",
       "world_size": 8,
       "step": 300,
-      "loss": 0.9929125308990479,
+      "loss": 0.9910205006599426,
       "learning_rate": 0.0002,
       "epoch": 7.1437125748503,
-      "timestamp": 1787409821.1192613
+      "timestamp": 1787580256.4618473
     }
   ],
-  "gpu_util_samples": 3048,
-  "gpu_util_mean_pct": 98.55,
+  "gpu_util_samples": 3050,
+  "gpu_util_mean_pct": 98.75,
   "gpu_util_max_pct": 100,
   "gpu_mem_allocated_gb": 16.296,
   "gpu_mem_reserved_gb": 21.905,

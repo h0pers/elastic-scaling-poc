@@ -3,63 +3,64 @@
   "events": [
     {
       "label": "low_priority_submitted",
-      "time": 1787405608.130685,
+      "time": 1787576162.9042468,
       "gpus": 8
     },
     {
       "label": "low_priority_checkpoint_reached",
-      "time": 1787406603.277862,
+      "time": 1787577016.6682842,
       "step": 100
     },
     {
       "label": "high_priority_arrival",
-      "time": 1787406603.2779284
+      "time": 1787577016.668347
     },
     {
       "label": "low_priority_initial_container_startup",
-      "time": 1787406603.3367653,
+      "time": 1787577016.7496114,
       "container_startup_s": 2.0
     },
     {
       "label": "low_priority_killed",
-      "time": 1787406603.381612
+      "time": 1787577016.8317716
     },
     {
       "label": "low_priority_gpus_released",
-      "time": 1787406608.401907
+      "time": 1787577021.8577433
     },
     {
       "label": "work_lost_measured",
-      "time": 1787406608.4059834,
-      "steps_lost": 0
+      "time": 1787577031.8586247,
+      "steps_lost": 0,
+      "resumed_from_step": 0
     },
     {
       "label": "high_priority_submitted",
-      "time": 1787406608.5012565,
+      "time": 1787577031.9752727,
       "gpus": 4
     },
     {
       "label": "high_priority_complete",
-      "time": 1787408203.518958
+      "time": 1787578641.8094518
     },
     {
       "label": "high_priority_container_startup",
-      "time": 1787408203.641984,
+      "time": 1787578641.8949857,
       "container_startup_s": 2.0
     },
     {
       "label": "low_priority_restarted",
-      "time": 1787408203.747571,
+      "time": 1787578642.0052767,
       "gpus": 8
     },
     {
-      "label": "low_priority_restart_container_startup",
-      "time": 1787408203.847571,
-      "container_startup_s": 32.0
+      "label": "low_priority_complete",
+      "time": 1787580281.9131608
     },
     {
-      "label": "low_priority_complete",
-      "time": 1787409832.199571
+      "label": "low_priority_restart_container_startup",
+      "time": 1787580281.9890761,
+      "container_startup_s": 2.0
     }
   ]
 }
