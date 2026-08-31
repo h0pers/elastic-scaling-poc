@@ -67,7 +67,7 @@ is waiting, and nothing tells Kubeflow Trainer either. That signal has to come f
 scheduler, and Kueue can only preempt a whole workload rather than reclaim part of one,
 tracked in [kueue#975](https://github.com/kubernetes-sigs/kueue/issues/975).
 
-## Knowing when is not the hardest part
+## What is missing, and what it costs
 
 None of this is buildable today, but the missing pieces differ enormously in cost.
 
