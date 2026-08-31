@@ -67,9 +67,6 @@ is waiting, and nothing tells Kubeflow Trainer either. That signal has to come f
 scheduler, and Kueue can only preempt a whole workload rather than reclaim part of one,
 tracked in [kueue#975](https://github.com/kubernetes-sigs/kueue/issues/975).
 
-So a Ray-style autoscaler would cover growing today. Priority-driven shrinking is the
-half nobody can build yet.
-
 ## Knowing when is not the hardest part
 
 None of this is buildable today, but the missing pieces differ enormously in cost.
@@ -86,12 +83,104 @@ higher-priority job is waiting for its GPUs. Kueue can stop a workload but canno
 to hand part of itself back, so there is nothing to subscribe to. That logic exists
 nowhere and has to be designed from scratch.
 
-**Ray needs it as much as Kubeflow Trainer does.**
+**Ray could use it as much as Kubeflow Trainer does.**
 [kueue#975](https://github.com/kubernetes-sigs/kueue/issues/975) is filed against Kueue
 rather than against either training framework, and its description names Ray clusters as
 the motivating case. Whoever builds the trigger unblocks both projects.
 
-Once that signal exists, the decision splits in two, and the halves are not symmetric.
+### Level 1: elastic training, no queue knowledge
+
+Trainer watches the cluster itself, the way Ray's autoscaler does. It never learns who is
+waiting or how important they are.
+
+Growing, when capacity appears:
+
+```{mermaid}
+flowchart TB
+    u1["TrainJob running on 4 GPUs<br/>declared range 4 to 8"]
+    u2["Trainer polls the cluster<br/>on an interval"]
+    u3{"Are there free GPUs?"}
+    u4{"Is there enough work left<br/>to be worth the restart?"}
+    u5["Trainer patches numNodes 4 to 8"]
+    u6["Stay at 4, poll again later"]
+    u7["JobSet creates 4 pods"]
+    u8["torchrun restarts all workers,<br/>resumes from checkpoint"]
+    u9["Kueue quota follows the resize"]
+
+    u1 --> u2 --> u3
+    u3 -- no --> u6
+    u3 -- yes --> u4
+    u4 -- no --> u6
+    u4 -- yes --> u5 --> u7 --> u8 --> u9
+
+    classDef kueue fill:#fdf3e0,stroke:#a3822a,color:#4a3a0c
+    classDef trainer fill:#eaf0f8,stroke:#2b6cb0,color:#12304f
+    classDef exec fill:#e6f2e6,stroke:#4a7a4a,color:#1c3a1c
+    classDef missing fill:#fdeaea,stroke:#a34a4a,stroke-dasharray: 5 5,color:#4a1c1c
+
+    class u1 kueue
+    class u2,u3,u4,u5,u6 trainer
+    class u7,u8 exec
+    class u9 missing
+```
+
+Shrinking, which is not a decision at this level:
+
+```{mermaid}
+flowchart TB
+    d1["TrainJob running on 8 GPUs"]
+    d2["A node is lost<br/>spot reclaim or failure"]
+    d3["torchrun sees the<br/>membership change"]
+    d4{"Do the remaining GPUs<br/>meet the declared minimum?"}
+    d5["Restart the survivors,<br/>carry on at the smaller size"]
+    d6["Checkpoint and stop"]
+
+    d1 --> d2 --> d3 --> d4
+    d4 -- yes --> d5
+    d4 -- no --> d6
+
+    classDef exec fill:#e6f2e6,stroke:#4a7a4a,color:#1c3a1c
+    classDef infra fill:#fdf3e0,stroke:#a3822a,color:#4a3a0c
+
+    class d1,d2 infra
+    class d3,d4,d5,d6 exec
+```
+
+Nothing chooses to shrink here. Capacity is taken away and the job survives on what is
+left.
+
+### Level 2: queue preemption
+
+Everything above still applies. What is added is a second reason to shrink, one the job
+does not choose.
+
+```{mermaid}
+flowchart TB
+    s1["TrainJob running on 8 GPUs<br/>Kueue holds its quota"]
+    s2["Higher-priority workload submitted,<br/>needs 4 GPUs, cluster is full"]
+    s3["Kueue reclaims 4 of our 8<br/>instead of evicting the whole job"]
+    s4["Kueue tells Trainer<br/>to release 4 GPUs"]
+    s5{"Do the remaining 4<br/>meet the declared minimum?"}
+    s6["Trainer patches numNodes 8 to 4"]
+    s7["Trainer checkpoints<br/>and lets the job stop"]
+    s8["JobSet deletes 4 pods"]
+    s9["torchrun restarts the survivors,<br/>resumes from checkpoint"]
+    s10["Kueue admits the waiting workload"]
+
+    s1 --> s2 --> s3 --> s4 --> s5
+    s5 -- yes --> s6 --> s8 --> s9 --> s10
+    s5 -- no --> s7 --> s10
+
+    classDef kueue fill:#fdf3e0,stroke:#a3822a,color:#4a3a0c
+    classDef trainer fill:#eaf0f8,stroke:#2b6cb0,color:#12304f
+    classDef exec fill:#e6f2e6,stroke:#4a7a4a,color:#1c3a1c
+    classDef missing fill:#fdeaea,stroke:#a34a4a,stroke-dasharray: 5 5,color:#4a1c1c
+
+    class s1,s2,s10 kueue
+    class s3,s4 missing
+    class s5,s6,s7 trainer
+    class s8,s9 exec
+```
 
 **Spare capacity is an offer**, and the job is free to decline it.
 
