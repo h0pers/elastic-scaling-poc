@@ -44,7 +44,7 @@ It is also comparable across configurations in a way step time is not. Changing 
 changes gradient accumulation, so step time measures a different quantity of work at each
 size, while tokens/sec normalises that away.
 
-## Ray has the same problem Kubeflow Trainer does
+## Ray scales on capacity, not on the queue
 
 Ray is the closest working reference, and it decides on one thing: what hardware is free.
 
