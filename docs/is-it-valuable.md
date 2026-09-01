@@ -38,8 +38,40 @@ Measured speedup against the ideal. The gap at 8 GPUs is 3%.
 ```
 
 LoRA only synchronises the adapter weights, a small fraction of the 8B-parameter model,
-so the all-reduce between GPUs costs little against a 7.6 second step. Expect this to
-weaken for full fine-tuning, which synchronises everything.
+so the all-reduce between GPUs costs little against a 7.6 second step.
+
+**Measured.** FSDP shards the model instead, and reaches 7.40x at 8 GPUs where DDP
+reached 7.76x.
+
+| GPUs | Step time | Tokens/sec | Speedup | Efficiency |
+|---:|---:|---:|---:|---:|
+| 1 | 57.24s | 2,290 | 1.00x | 100% |
+| 2 | 30.48s | 4,301 | 1.88x | 93.9% |
+| 4 | 15.34s | 8,546 | 3.73x | 93.3% |
+| 8 | 7.73s | 16,947 | 7.40x | 92.5% |
+
+Same model, dataset, LoRA settings and batch geometry as the run above. The only change is
+FSDP in place of DDP. n=180 steady-state steps per configuration.
+Source: `results/phase5/scaling.csv`.
+
+```{figure} _generated/fsdp-scaling.svg
+:alt: Speedup against GPU count under FSDP, tracking below the ideal linear line and reaching 7.40x at 8 GPUs
+
+Measured speedup against the ideal. The gap at 8 GPUs is 7.5%.
+```
+
+DDP gives every GPU a full copy of the model. With LoRA, it only syncs the adapters, and
+those are tiny.
+
+FSDP splits the model across GPUs instead. No GPU holds all of it. So before each layer
+runs, the GPUs fetch that layer's weights from each other. They do this on every step.
+
+Those weights include the frozen 8B base. LoRA never trains them. DDP never moves them.
+FSDP moves them anyway, and that is the cost.
+
+In return, FSDP saves memory. Peak GPU memory falls from 20.0GB on 1 GPU to 7.3GB on 8,
+because each shard gets smaller. DDP stays flat at 20.8GB. That trade only pays for a
+model too big to fit on one GPU.
 
 ## The restart timeline
 

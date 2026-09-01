@@ -63,6 +63,25 @@ def load_phase1():
     return sorted(rows, key=lambda row: row["world_size"])
 
 
+def load_phase5():
+    """Phase 5 FSDP scaling sweep, one row per GPU count, ascending."""
+    numeric = {
+        "world_size": int,
+        "mean_step_time_s": float,
+        "mean_tokens_per_s": float,
+        "gpu_util_mean_pct": float,
+        "total_train_time_s": float,
+        "speedup": float,
+        "efficiency_pct": float,
+    }
+    with (RESULTS / "phase5" / "scaling.csv").open() as handle:
+        rows = [
+            {key: cast(row[key]) for key, cast in numeric.items()}
+            for row in csv.DictReader(handle)
+        ]
+    return sorted(rows, key=lambda row: row["world_size"])
+
+
 def load_phase3():
     """Phase 3 restart record: timeline plus per-step losses."""
     return json.loads((RESULTS / "phase3" / "startup_timing.json").read_text())
@@ -169,6 +188,28 @@ def fig_scaling():
     ax.set_xlabel("GPUs")
     ax.set_ylabel("Speedup versus 1 GPU")
     ax.set_title("LoRA fine-tuning scales almost linearly to 8 GPUs")
+    ax.legend(loc="upper left")
+    fig.tight_layout()
+    return fig
+
+
+def fig_fsdp_scaling():
+    rows = load_phase5()
+    gpus = [r["world_size"] for r in rows]
+    speedup = [r["speedup"] for r in rows]
+
+    fig, ax = plt.subplots()
+    ax.plot(gpus, gpus, linestyle="--", color=GREY, linewidth=1.2, label="Ideal (linear)")
+    ax.plot(gpus, speedup, marker="o", color=RUST, linewidth=2, label="Measured")
+    for x, y in zip(gpus, speedup):
+        ax.annotate(f"{y:.2f}x", (x, y), textcoords="offset points",
+                    xytext=(8, -10), fontsize=9, color=RUST)
+    ax.set_xscale("log", base=2)
+    ax.set_xticks(gpus)
+    ax.set_xticklabels(gpus)
+    ax.set_xlabel("GPUs")
+    ax.set_ylabel("Speedup versus 1 GPU")
+    ax.set_title("FSDP gives up some scaling to shard the model")
     ax.legend(loc="upper left")
     fig.tight_layout()
     return fig
@@ -353,6 +394,7 @@ def fig_phase4_timeline():
 
 FIGURES = {
     "scaling": fig_scaling,
+    "fsdp-scaling": fig_fsdp_scaling,
     "restart-breakdown": fig_restart_breakdown,
     "break-even": fig_break_even,
     "contention": fig_contention,
