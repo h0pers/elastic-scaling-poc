@@ -24,7 +24,8 @@ block to come free, and reclaiming capacity costs an entire job's progress.
 | 3 | Can existing tools automate it? | [Can we automate it?](can-we-automate.md) |
 
 Every number quoted on those pages is tabulated in
-[the measurements](evidence.md).
+[the measurements](evidence.md). All code and results are on
+[GitHub](https://github.com/h0pers/elastic-scaling-poc).
 
 ## Setup
 
