@@ -171,48 +171,44 @@ def load_losses(relative_path):
 # Figures
 
 
-def fig_scaling():
-    rows = load_phase1()
+def _speedup_figure(rows, color, title):
+    """Speedup against GPU count on log-log axes, with the ideal for reference.
+
+    Both axes share log base 2, so linear scaling is a straight line of slope 1
+    and any departure from it reads as curvature rather than a widening gap.
+    """
     gpus = [r["world_size"] for r in rows]
     speedup = [r["speedup"] for r in rows]
 
     fig, ax = plt.subplots()
     ax.plot(gpus, gpus, linestyle="--", color=GREY, linewidth=1.2, label="Ideal (linear)")
-    ax.plot(gpus, speedup, marker="o", color=BLUE, linewidth=2, label="Measured")
+    ax.plot(gpus, speedup, marker="o", color=color, linewidth=2, label="Measured")
     for x, y in zip(gpus, speedup):
         ax.annotate(f"{y:.2f}x", (x, y), textcoords="offset points",
-                    xytext=(8, -10), fontsize=9, color=BLUE)
+                    xytext=(8, -10), fontsize=9, color=color)
     ax.set_xscale("log", base=2)
+    ax.set_yscale("log", base=2)
     ax.set_xticks(gpus)
     ax.set_xticklabels(gpus)
-    ax.set_xlabel("GPUs")
-    ax.set_ylabel("Speedup versus 1 GPU")
-    ax.set_title("LoRA fine-tuning scales almost linearly to 8 GPUs")
+    ax.set_yticks(gpus)
+    ax.set_yticklabels(gpus)
+    ax.minorticks_off()
+    ax.set_xlabel("GPUs (log scale)")
+    ax.set_ylabel("Speedup versus 1 GPU (log scale)")
+    ax.set_title(title)
     ax.legend(loc="upper left")
     fig.tight_layout()
     return fig
+
+
+def fig_scaling():
+    return _speedup_figure(load_phase1(), BLUE,
+                           "LoRA fine-tuning scales almost linearly to 8 GPUs")
 
 
 def fig_fsdp_scaling():
-    rows = load_phase5()
-    gpus = [r["world_size"] for r in rows]
-    speedup = [r["speedup"] for r in rows]
-
-    fig, ax = plt.subplots()
-    ax.plot(gpus, gpus, linestyle="--", color=GREY, linewidth=1.2, label="Ideal (linear)")
-    ax.plot(gpus, speedup, marker="o", color=RUST, linewidth=2, label="Measured")
-    for x, y in zip(gpus, speedup):
-        ax.annotate(f"{y:.2f}x", (x, y), textcoords="offset points",
-                    xytext=(8, -10), fontsize=9, color=RUST)
-    ax.set_xscale("log", base=2)
-    ax.set_xticks(gpus)
-    ax.set_xticklabels(gpus)
-    ax.set_xlabel("GPUs")
-    ax.set_ylabel("Speedup versus 1 GPU")
-    ax.set_title("FSDP gives up some scaling to shard the model")
-    ax.legend(loc="upper left")
-    fig.tight_layout()
-    return fig
+    return _speedup_figure(load_phase5(), RUST,
+                           "FSDP gives up some scaling to shard the model")
 
 
 def fig_restart_breakdown():
